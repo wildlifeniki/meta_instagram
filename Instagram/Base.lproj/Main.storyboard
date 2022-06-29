@@ -22,12 +22,18 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Login"/>
+                                <connections>
+                                    <action selector="didTapLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pkJ-Qq-rso"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jc0-gO-fgA">
                                 <rect key="frame" x="245" y="433" width="93" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="Sign Up"/>
+                                <connections>
+                                    <action selector="didTapSignUp:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yef-Ft-d7A"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vWi-Ld-5ng">
                                 <rect key="frame" x="73" y="349" width="265" height="34"/>
@@ -52,6 +58,11 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordField" destination="fKR-OC-XZl" id="kAR-pv-QKv"/>
+                        <outlet property="usernameField" destination="vWi-Ld-5ng" id="9Dl-uy-lmx"/>
+                        <segue destination="OVw-ns-FoX" kind="presentation" identifier="loginSegue" id="7sQ-Jl-4ef"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="-7.2463768115942031" y="64.955357142857139"/>
@@ -61,7 +72,7 @@
             <objects>
                 <viewController id="Itx-u7-IHO" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="a3W-EY-bf0">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="1l8-Cs-Sd4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -77,7 +88,7 @@
             <objects>
                 <viewController id="iAd-RR-AbT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5ZD-9r-GPf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="gYu-Wm-dML"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
