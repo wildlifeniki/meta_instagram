@@ -28,11 +28,12 @@
             NSLog(@"Error posting: %@", error.localizedDescription);
         }
         else{
-            //[self.delegate didTweet:tweet];
+            [self.delegate didPost];
             NSLog(@"Post Success! caption: '%@'", self.captionInputText.text);
             [self dismissViewControllerAnimated:true completion:nil];
         }
     }];
+
 }
 
 - (UIImage *)resizeImage:(UIImage *)image withSize:(CGSize)size {

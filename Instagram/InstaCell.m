@@ -21,10 +21,16 @@
     // Configure the view for the selected state
 }
 
--(void)setPostObject:(Post *)post {
-    //self.postImage.image = self.post.image;
+- (void)setPostObject:(Post *)post {
+    Post *newPost = [Post new];
 
+    // get the current user and assign it to "author" field. "author" field is now of Pointer type
+    newPost.author = [PFUser currentUser];
+    
+    _post = post;
+    self.postImage.file = post[@"image"];
+    [self.postImage loadInBackground];
+    self.captionLabel.text = _post.caption;
 }
-
 
 @end
