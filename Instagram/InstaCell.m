@@ -6,6 +6,7 @@
 //
 
 #import "InstaCell.h"
+#import "Post.h"
 
 @implementation InstaCell
 
@@ -19,5 +20,11 @@
 
     // Configure the view for the selected state
 }
+
+-(void)setPostObject:(Post *)post {
+    //self.postImage.image = self.post.image;
+
+}
+
 
 @end
