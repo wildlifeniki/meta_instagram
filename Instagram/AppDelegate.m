@@ -14,19 +14,19 @@
 
 @implementation AppDelegate
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(  NSDictionary *)launchOptions {
-
-    ParseClientConfiguration *config = [ParseClientConfiguration  configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
-
-        configuration.applicationId = @"TxgbMNA1gJM7x5Lb8schJDoR0hXUzcXIuNWSQpDY";
-        configuration.clientKey = @"zD2MzzsF8I49v97lYvOt4TPVsrN4jSYELvE4aoVh";
-        configuration.server = @"https://parseapi.back4app.com";
-    }];
-
-    [Parse initializeWithConfiguration:config];
-
-    return YES;
-}
+//- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(  NSDictionary *)launchOptions {
+//
+//    ParseClientConfiguration *config = [ParseClientConfiguration  configurationWithBlock:^(id<ParseMutableClientConfiguration> configuration) {
+//
+//        configuration.applicationId = @"TxgbMNA1gJM7x5Lb8schJDoR0hXUzcXIuNWSQpDY";
+//        configuration.clientKey = @"zD2MzzsF8I49v97lYvOt4TPVsrN4jSYELvE4aoVh";
+//        configuration.server = @"https://parseapi.back4app.com";
+//    }];
+//
+//    [Parse initializeWithConfiguration:config];
+//    
+//    return YES;
+//}
 
 
 #pragma mark - UISceneSession lifecycle
