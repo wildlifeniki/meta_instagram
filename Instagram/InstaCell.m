@@ -31,6 +31,7 @@
     self.postImage.file = post[@"image"];
     [self.postImage loadInBackground];
     self.captionLabel.text = _post.caption;
+    
 }
 
 @end

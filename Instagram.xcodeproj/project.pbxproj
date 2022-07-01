@@ -18,6 +18,7 @@
 		7E044217286CD0BA00722C86 /* InstagramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E044216286CD0BA00722C86 /* InstagramTests.m */; };
 		7E044221286CD0BA00722C86 /* InstagramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E044220286CD0BA00722C86 /* InstagramUITests.m */; };
 		7E044223286CD0BA00722C86 /* InstagramUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E044222286CD0BA00722C86 /* InstagramUITestsLaunchTests.m */; };
+		7E861528286E6E9C00D6F643 /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E861527286E6E9C00D6F643 /* DetailsViewController.m */; };
 		7E8FD34E286CDAF0001F24A0 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FD34D286CDAF0001F24A0 /* LoginViewController.m */; };
 		7E8FD351286D10E4001F24A0 /* FeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FD350286D10E4001F24A0 /* FeedViewController.m */; };
 		7E8FD354286D10FC001F24A0 /* ProfileViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E8FD353286D10FC001F24A0 /* ProfileViewController.m */; };
@@ -67,6 +68,8 @@
 		7E04421C286CD0BA00722C86 /* InstagramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstagramUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7E044220286CD0BA00722C86 /* InstagramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramUITests.m; sourceTree = "<group>"; };
 		7E044222286CD0BA00722C86 /* InstagramUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = InstagramUITestsLaunchTests.m; sourceTree = "<group>"; };
+		7E861526286E6E9C00D6F643 /* DetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		7E861527286E6E9C00D6F643 /* DetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
 		7E8FD34C286CDAF0001F24A0 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		7E8FD34D286CDAF0001F24A0 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		7E8FD34F286D10E4001F24A0 /* FeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FeedViewController.h; sourceTree = "<group>"; };
@@ -152,6 +155,8 @@
 				7E8FD35C286E14C6001F24A0 /* ComposeViewController.m */,
 				7E8FD35E286E2270001F24A0 /* Post.h */,
 				7E8FD35F286E2270001F24A0 /* Post.m */,
+				7E861526286E6E9C00D6F643 /* DetailsViewController.h */,
+				7E861527286E6E9C00D6F643 /* DetailsViewController.m */,
 				7E044206286CD0BA00722C86 /* Assets.xcassets */,
 				7E044203286CD0B900722C86 /* Main.storyboard */,
 				7E044208286CD0BA00722C86 /* LaunchScreen.storyboard */,
@@ -440,6 +445,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7E0441FC286CD0B900722C86 /* AppDelegate.m in Sources */,
+				7E861528286E6E9C00D6F643 /* DetailsViewController.m in Sources */,
 				7E8FD357286D1B79001F24A0 /* InstaCell.m in Sources */,
 				7E8FD351286D10E4001F24A0 /* FeedViewController.m in Sources */,
 				7E04420D286CD0BA00722C86 /* main.m in Sources */,

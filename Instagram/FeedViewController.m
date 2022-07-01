@@ -12,6 +12,7 @@
 #import "SceneDelegate.h"
 #import "InstaCell.h"
 #import "ComposeViewController.h"
+#import "DetailsViewController.h"
 
 @interface FeedViewController () <UITableViewDataSource, UITableViewDelegate>
 
@@ -115,11 +116,15 @@
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-    UINavigationController *navigationController = [segue destinationViewController];
-    ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
-    composeController.delegate = self;
+    if ([segue.identifier  isEqual: @"createPost"]) {
+        UINavigationController *navigationController = [segue destinationViewController];
+        ComposeViewController *composeController = (ComposeViewController*)navigationController.topViewController;
+        composeController.delegate = self;
+    }
+    else {
+        DetailsViewController *viewController = [segue destinationViewController];
+        viewController.post = self.arrayOfPosts[self.tableView.indexPathForSelectedRow.row];
+    }
 }
 
 
